@@ -1,11 +1,14 @@
 # Unity-shooter
 
-##To Do  
+##To Do 
+```
 Player
-  -add player movement
-  -add firing
-  -add bullet
-  -add damage/health
+  -add player movement  
+  -add firing  
+  -add bullet  
+  -add damage/health  
+```  
+```  
 enemy
   -create enemy object
   -create AI
@@ -13,3 +16,4 @@ enemy
   -create animation
   -create damage/health
   -create movement
+```
