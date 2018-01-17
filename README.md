@@ -3,7 +3,7 @@
 ## To Do 
 ```
 Player
-  ~~-add player movement  ~~
+  ~~-add player movement~~ done
   -add firing  (in progress)
   -add bullet  (in progress)
   -add damage/health  
