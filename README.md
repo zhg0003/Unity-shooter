@@ -17,3 +17,9 @@ enemy
   -create damage/health
   -create movement
 ```
+```
+items
+  -power up
+  -health
+  -some others
+```
