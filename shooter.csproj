@@ -282,8 +282,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\bullet.cs" />
     <Compile Include="Assets\script\BGmanager.cs" />
     <Compile Include="Assets\script\moveBG.cs" />
+    <Compile Include="Assets\script\playerCombat.cs" />
+    <Compile Include="Assets\script\playerMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Robot Shooting Game\Read Me.txt" />
