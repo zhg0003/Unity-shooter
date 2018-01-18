@@ -30,7 +30,7 @@ public class playerCombat : MonoBehaviour {
 
         if (Input.GetButtonUp("Fire1"))
         {
-            print("att detected");
+            //print("att detected");
             anim.SetBool("att", false);
         }
 

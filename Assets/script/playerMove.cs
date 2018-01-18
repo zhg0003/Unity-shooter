@@ -38,9 +38,9 @@ public class playerMove : MonoBehaviour {
 
     private void movement(float deltaX, float deltaY)
     {
-        print("current transform position is " + transform.position);
+        //print("current transform position is " + transform.position);
         Vector2 pos = new Vector2(transform.position.x + deltaX, transform.position.y+deltaY);
         transform.position = pos;
-        print("moving to position" + pos);
+        //print("moving to position" + pos);
     }
 }
