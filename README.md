@@ -4,13 +4,13 @@
 ```
 Player
   -add player movement (done)
-  -add firing  (in progress)
-  -add bullet  (in progress)
-  -add damage/health  
+  -add firing  (done)
+  -add bullet  (almost done)
+  -add damage/health (almost done)
 ```  
 ```  
 enemy
-  -create enemy object
+  -create enemy object (in progress)
   -create AI
   -create firing
   -create animation
