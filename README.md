@@ -14,7 +14,7 @@ enemy
   -create AI
   -create firing
   -create animation
-  -create damage/health
+  -create damage/health (in progress)
   -create movement
 ```
 ```
