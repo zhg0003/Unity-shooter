@@ -11,6 +11,7 @@ public class bullet_trigger : MonoBehaviour {
         {
             print("about to call other object dmg");
             other.SendMessageUpwards("damage", dmg);
+            Destroy(gameObject);
         }
     }
 }
