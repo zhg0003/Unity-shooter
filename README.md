@@ -5,17 +5,25 @@
 Player
   -add player movement (done)
   -add firing  (done)
-  -add bullet  (almost done)
-  -add damage/health (almost done)
+  -add default bullet  (done)
+  -add damage/health (done)
 ```  
 ```  
 enemy
   -create enemy object (in progress)
+    -create enemy spawn group prefab (in progress)
   -create AI
   -create firing
-  -create animation
+  -create animation (in progress)
+    -death animation (done)
+    -idle animation (done)
+    -attack animation (if any)
   -create damage/health (in progress)
-  -create movement
+    -health (done)
+    -damage (in progress)
+      -create enemy projectile(in progress)
+  -create movement (in progress)
+    -create vertical/rotational movement (in progress)
 ```
 ```
 items
