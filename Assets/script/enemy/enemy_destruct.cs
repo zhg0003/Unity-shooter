@@ -11,11 +11,11 @@ public class enemy_destruct : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("att triggered " + other.gameObject.tag + " istrigger " + other.isTrigger);
+        //print("att triggered " + other.gameObject.tag + " istrigger " + other.isTrigger);
         if (other.tag == ("Player"))
         {
-            print("about to call other object dmg, dmg is "+dmg);
             other.SendMessageUpwards("damage", dmg);
+            gameObject.GetComponent<Collider2D>().enabled = false;
             anim.SetBool("death", true);
             Destroy(gameObject,anim.GetCurrentAnimatorStateInfo(0).length);
         }

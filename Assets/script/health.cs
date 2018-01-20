@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class health : MonoBehaviour {
-    public int startingHealth = 100;
-    public int currentHealth;
+    private int currentHealth;
     public int maxHealth;
     public Slider healthBar;
     private float iframe;
@@ -15,8 +14,7 @@ public class health : MonoBehaviour {
 
     // Use this for initialization
     void Awake () {
-        maxHealth = 100;
-        currentHealth = startingHealth;
+        currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         healthBar.value = currentHealth / maxHealth;
@@ -29,6 +27,10 @@ public class health : MonoBehaviour {
             sprite.enabled = !sprite.enabled;
             iframe -= Time.deltaTime;
         }
+        else if(iframe < 0)
+        {
+            sprite.enabled = true;
+        }
         if (currentHealth == 0)
         {
             death();
@@ -37,14 +39,13 @@ public class health : MonoBehaviour {
 
     public void death()
     {
-        print("dead");
+        GetComponent<Collider2D>().enabled = false;
         anim.SetBool("death", true);
         Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
     }
 
     public void damage(int dmg)
     {
-        print("damage called, incoming dmg "+dmg);
         if (iframe <= 0)//iframe less than 0 means can be damaged
         {
             //anim.Play("hurt");
@@ -56,7 +57,6 @@ public class health : MonoBehaviour {
     }
     public void heal(int value)
     {
-        print("heal is called");
         if (currentHealth <= 0)
         {
             print("player is dead lulz");

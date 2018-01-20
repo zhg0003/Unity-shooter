@@ -108,7 +108,8 @@ GameObject:
   - component: {fileID: 61756836618744448}
   - component: {fileID: 114957289948897692}
   - component: {fileID: 95217673809976254}
-  - component: {fileID: 114855432601182162}
+  - component: {fileID: 114274724966433682}
+  - component: {fileID: 114683526382934844}
   m_Layer: 0
   m_Name: enemy_1
   m_TagString: enemies
@@ -208,6 +209,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114274724966433682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1887627036049486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a630ec56b399f4089449dd2abdf7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: {fileID: 0}
+  maxSpawnCD: 3
+  groupCD: 0
+  amount: 0
+  pos: {x: 0, y: 0, z: 0}
+  currentPos: {fileID: 0}
+  speedx: 1.32
 --- !u!114 &114325599995272478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -229,6 +248,22 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114683526382934844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1887627036049486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee5de66ce849944797f7ff1fc8f7186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waiting: 1
+  bullet: {fileID: 1287075845095328, guid: 69ec2bafab2679449ae41e5227a2bea2, type: 2}
+  offset: -0.1
+  Amount: 3
+  attackCD: 0.25
 --- !u!114 &114703961957324932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,28 +302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dce0a5bebc9af0e46a9826ea58cad6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  maxHealth: 0
+  maxHealth: 10
   healthBar: {fileID: 114953182007505096}
   maxIframe: 0
   anim: {fileID: 0}
   sprite: {fileID: 0}
---- !u!114 &114855432601182162
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1887627036049486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72a630ec56b399f4089449dd2abdf7a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: {fileID: 0}
-  speed: 2
-  spawnCD: 0.5
-  smoothTime: 0.3
 --- !u!114 &114882348795944252
 MonoBehaviour:
   m_ObjectHideFlags: 1

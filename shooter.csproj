@@ -282,13 +282,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\enemy_manager.cs" />
     <Compile Include="Assets\main menu\script\main menu.cs" />
     <Compile Include="Assets\script\BGmanager.cs" />
     <Compile Include="Assets\script\bullet.cs" />
     <Compile Include="Assets\script\bullet_trigger.cs" />
-    <Compile Include="Assets\script\enemy_destruct.cs" />
-    <Compile Include="Assets\script\enemyMovement.cs" />
+    <Compile Include="Assets\script\enemy\enemy_bullet_movement.cs" />
+    <Compile Include="Assets\script\enemy\enemy_bullet_trigger.cs" />
+    <Compile Include="Assets\script\enemy\enemy_destruct.cs" />
+    <Compile Include="Assets\script\enemy\enemy_fire.cs" />
+    <Compile Include="Assets\script\enemy\enemy_group_manager.cs" />
+    <Compile Include="Assets\script\enemy\enemyMovement_straight.cs" />
+    <Compile Include="Assets\script\enemy\enemyMovement_updown.cs" />
     <Compile Include="Assets\script\health.cs" />
     <Compile Include="Assets\script\leftEdge.cs" />
     <Compile Include="Assets\script\moveBG.cs" />
