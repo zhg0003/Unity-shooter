@@ -10,6 +10,7 @@ public class enemy_group_manager : MonoBehaviour {
     public int amount; //spawn amount
     public Vector3 pos; //spawn position
 
+    private Vector3 spawnPos;
     private float spawnCD;
     private float groupSpawnCD;
     private int spawnAmount;
@@ -20,7 +21,7 @@ public class enemy_group_manager : MonoBehaviour {
         spawnAmount = amount;
         spawnCD = maxSpawnCD;
         groupSpawnCD = groupCD;
-        pos = new Vector3(6f, 0, 0);
+        spawnPos = pos;
         canSpawn = true;
     }
 	
@@ -43,7 +44,7 @@ public class enemy_group_manager : MonoBehaviour {
             spawnAmount = amount;
             groupSpawnCD = groupCD;
             canSpawn = true;
-            pos = new Vector3(6f, Random.Range(-3f,3f), 0);
+            spawnPos = new Vector3(6f, Random.Range(-3f,3f), 0);
         }
 
     }
@@ -54,7 +55,7 @@ public class enemy_group_manager : MonoBehaviour {
             spawnCD -= Time.deltaTime;
         else if (spawnAmount > 0)
         {
-            Instantiate(enemies, pos, transform.rotation);
+            Instantiate(enemies, spawnPos, transform.rotation);
             spawnCD = maxSpawnCD;
             spawnAmount -= 1;
         }

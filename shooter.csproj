@@ -291,15 +291,18 @@
     <Compile Include="Assets\script\enemy\enemy_destruct.cs" />
     <Compile Include="Assets\script\enemy\enemy_fire.cs" />
     <Compile Include="Assets\script\enemy\enemy_group_manager.cs" />
+    <Compile Include="Assets\script\enemy\enemy_health.cs" />
     <Compile Include="Assets\script\enemy\enemyMovement_straight.cs" />
     <Compile Include="Assets\script\enemy\enemyMovement_updown.cs" />
-    <Compile Include="Assets\script\health.cs" />
     <Compile Include="Assets\script\leftEdge.cs" />
+    <Compile Include="Assets\script\menu\GameOverMenu.cs" />
     <Compile Include="Assets\script\moveBG.cs" />
+    <Compile Include="Assets\script\player_health.cs" />
     <Compile Include="Assets\script\playerCombat.cs" />
     <Compile Include="Assets\script\playerMove.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
     <None Include="Assets\Robot Shooting Game\Read Me.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

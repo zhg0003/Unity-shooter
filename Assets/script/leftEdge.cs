@@ -6,6 +6,9 @@ public class leftEdge : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.SendMessageUpwards("death");
+        if (other.tag == "Player" || other.tag == "enemies" || other.tag == "bullet")
+        {
+            other.SendMessageUpwards("death");
+        }
     }
 }

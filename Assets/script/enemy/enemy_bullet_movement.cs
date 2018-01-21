@@ -35,11 +35,15 @@ public class enemy_bullet_movement : MonoBehaviour
         }
     }
 
+    public void death() //this is called when bullet is out of range
+    {
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.name == "player")
         {
-            print("enter into player");
             collision.SendMessageUpwards("damage", dmg);
             Destroy(gameObject);
         }

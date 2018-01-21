@@ -11,7 +11,7 @@ public class enemy_fire : MonoBehaviour {
     public float attackCD;
 
     private float attCD;
-    private int fireAmount;
+    private int fireAmount; //amount of times this enemy is allowed to fire
     private float waitTimer; //initial waiting timer, only apply once before the first attack
     private bool canFire;
 	// Use this for initialization

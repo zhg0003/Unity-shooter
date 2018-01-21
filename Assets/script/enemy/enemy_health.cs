@@ -3,31 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class health : MonoBehaviour {
-    private int currentHealth;
+public class enemy_health : MonoBehaviour
+{
+    public int currentHealth;
     public int maxHealth;
     public Slider healthBar;
+
     private float iframe;
     public float maxIframe;
+
     public Animator anim;
     public SpriteRenderer sprite;
 
     // Use this for initialization
-    void Awake () {
+    void Awake()
+    {
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         healthBar.value = currentHealth / maxHealth;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (iframe > 0)
         {
             sprite.enabled = !sprite.enabled;
             iframe -= Time.deltaTime;
         }
-        else if(iframe < 0)
+        else if (iframe < 0)
         {
             sprite.enabled = true;
         }
@@ -35,7 +40,7 @@ public class health : MonoBehaviour {
         {
             death();
         }
-	}
+    }
 
     public void death()
     {
@@ -48,18 +53,23 @@ public class health : MonoBehaviour {
     {
         if (iframe <= 0)//iframe less than 0 means can be damaged
         {
-            //anim.Play("hurt");
-            currentHealth -= dmg;
+            if (dmg < currentHealth)
+                currentHealth -= dmg;
+            else
+            {
+                currentHealth = 0;
+                death();
+            }
             iframe = maxIframe;
             healthBar.value = (float)currentHealth / maxHealth;
         }
-        
+
     }
     public void heal(int value)
     {
         if (currentHealth <= 0)
         {
-            print("player is dead lulz");
+            death();
         }
         else
         {

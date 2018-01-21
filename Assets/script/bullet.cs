@@ -25,4 +25,9 @@ public class bullet : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+    public void death() //destroy this bullet when it flies out of range
+    {
+        Destroy(gameObject);
+    }
 }

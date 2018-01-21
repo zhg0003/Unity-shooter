@@ -6,6 +6,8 @@ TagManager:
   tags:
   - UI
   - enemies
+  - GameOverMenu
+  - bullet
   layers:
   - Default
   - TransparentFX

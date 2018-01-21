@@ -7,6 +7,7 @@ public class bullet_trigger : bullet {
     {
         if (other.tag == "enemies")
         {
+            print("calling dmg on enemy");
             other.SendMessageUpwards("damage", dmg);
             Destroy(gameObject);
         }

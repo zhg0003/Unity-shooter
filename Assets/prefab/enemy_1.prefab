@@ -103,13 +103,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4115630297836960}
   - component: {fileID: 212356976321612722}
-  - component: {fileID: 114715019579221914}
   - component: {fileID: 50073036496693922}
   - component: {fileID: 61756836618744448}
   - component: {fileID: 114957289948897692}
   - component: {fileID: 95217673809976254}
   - component: {fileID: 114274724966433682}
   - component: {fileID: 114683526382934844}
+  - component: {fileID: 114412880592555500}
   m_Layer: 0
   m_Name: enemy_1
   m_TagString: enemies
@@ -124,8 +124,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1887627036049486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.325, y: 1.02, z: 0}
-  m_LocalScale: {x: 2.083922, y: 2.083922, z: 2.083922}
+  m_LocalPosition: {x: 5.21, y: 0.02, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
   - {fileID: 224550351892763704}
   m_Father: {fileID: 0}
@@ -226,7 +226,7 @@ MonoBehaviour:
   amount: 0
   pos: {x: 0, y: 0, z: 0}
   currentPos: {fileID: 0}
-  speedx: 1.32
+  speedx: 2
 --- !u!114 &114325599995272478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,6 +248,23 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114412880592555500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1887627036049486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a07a78a818d022641a616ec6683fc574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 10
+  healthBar: {fileID: 114953182007505096}
+  maxIframe: 0
+  anim: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!114 &114683526382934844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -291,22 +308,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114715019579221914
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1887627036049486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dce0a5bebc9af0e46a9826ea58cad6cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
-  healthBar: {fileID: 114953182007505096}
-  maxIframe: 0
-  anim: {fileID: 0}
-  sprite: {fileID: 0}
 --- !u!114 &114882348795944252
 MonoBehaviour:
   m_ObjectHideFlags: 1

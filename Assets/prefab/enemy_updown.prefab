@@ -37,12 +37,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4300402286472638}
   - component: {fileID: 212088026126547404}
-  - component: {fileID: 114234247160687512}
   - component: {fileID: 50680885849582134}
   - component: {fileID: 61518500548395208}
   - component: {fileID: 114635639287337750}
   - component: {fileID: 95015584926769480}
   - component: {fileID: 114726133326857928}
+  - component: {fileID: 114568471205186664}
   m_Layer: 0
   m_Name: enemy_updown
   m_TagString: enemies
@@ -123,8 +123,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1091627320962130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.325, y: 1.02, z: 0}
-  m_LocalScale: {x: 2.083922, y: 2.083922, z: 2.083922}
+  m_LocalPosition: {x: -197.7918, y: -36.19881, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
   - {fileID: 224322440483329470}
   m_Father: {fileID: 0}
@@ -267,22 +267,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114234247160687512
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1091627320962130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dce0a5bebc9af0e46a9826ea58cad6cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 0
-  healthBar: {fileID: 114122760636834842}
-  maxIframe: 0
-  anim: {fileID: 0}
-  sprite: {fileID: 0}
 --- !u!114 &114465138782472088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,6 +331,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114568471205186664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091627320962130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a07a78a818d022641a616ec6683fc574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 10
+  healthBar: {fileID: 114122760636834842}
+  maxIframe: 0
+  anim: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!114 &114635639287337750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,8 +377,8 @@ MonoBehaviour:
   groupCD: 0
   amount: 5
   pos: {x: 0, y: 0, z: 0}
-  speedx: 3
-  speedy: 5
+  speedx: 2
+  speedy: 2
   timer: 0.25
   currentPos: {fileID: 0}
 --- !u!212 &212088026126547404
