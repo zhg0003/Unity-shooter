@@ -40,7 +40,6 @@ public class enemy_group_manager : MonoBehaviour {
 
         if(groupSpawnCD < 0) //once group cd reaches 0, reset spawn info
         {
-            print("in here");
             spawnAmount = amount;
             groupSpawnCD = groupCD;
             canSpawn = true;

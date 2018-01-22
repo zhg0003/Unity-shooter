@@ -278,9 +278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waiting: 1
   bullet: {fileID: 1287075845095328, guid: 69ec2bafab2679449ae41e5227a2bea2, type: 2}
-  offset: -0.1
+  offsetX: -0.1
+  offsetY: 0
   Amount: 3
   attackCD: 0.25
+  spawnRoatation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &114703961957324932
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -15,8 +15,10 @@ public class player_health : MonoBehaviour {
     public SpriteRenderer sprite;
 
     public GameObject gameOverMenu; //activate this when player has died
+    public bool isAlive;
     // Use this for initialization
     void Awake () {
+        isAlive = true;
         gameOverMenu.SetActive(false);
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
@@ -46,6 +48,7 @@ public class player_health : MonoBehaviour {
         GetComponent<Collider2D>().enabled = false;
         anim.SetBool("death", true);
         gameOverMenu.SetActive(true);
+        isAlive = false;
         Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
     }
 
@@ -70,7 +73,7 @@ public class player_health : MonoBehaviour {
     {
         if (currentHealth <= 0)
         {
-            print("player is dead lulz");
+            death();
         }
         else
         {

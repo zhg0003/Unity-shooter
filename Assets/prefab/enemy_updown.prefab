@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 95015584926769480}
   - component: {fileID: 114726133326857928}
   - component: {fileID: 114568471205186664}
+  - component: {fileID: 114280609469763840}
   m_Layer: 0
   m_Name: enemy_updown
   m_TagString: enemies
@@ -267,6 +268,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114280609469763840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091627320962130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee5de66ce849944797f7ff1fc8f7186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waiting: 1
+  bullet: {fileID: 1287075845095328, guid: 69ec2bafab2679449ae41e5227a2bea2, type: 2}
+  offset: -0.1
+  Amount: 1
+  attackCD: 0.25
 --- !u!114 &114465138782472088
 MonoBehaviour:
   m_ObjectHideFlags: 1

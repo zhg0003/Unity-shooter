@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//this movement will target the player
+
 public class enemy_bullet_movement : MonoBehaviour
 {
     private Collider2D hit;
@@ -35,7 +37,7 @@ public class enemy_bullet_movement : MonoBehaviour
         }
     }
 
-    public void death() //this is called when bullet is out of range
+    public void death() //this is called when bullet destroyed by player
     {
         Destroy(gameObject);
     }

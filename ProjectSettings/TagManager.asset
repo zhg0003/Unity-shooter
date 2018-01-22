@@ -8,6 +8,7 @@ TagManager:
   - enemies
   - GameOverMenu
   - bullet
+  - missile
   layers:
   - Default
   - TransparentFX
