@@ -117,6 +117,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 788aad8a013b7e2c68ebea5c1b6b410e Assembly-CSharp.dll:.enemy_group_manager
+780b421ac761b0a9d55b1faa31399f38 Assembly-CSharp.dll:.boss_1_ai
 49c2aa2dda34c891b21707244ed453e4 Assembly-CSharp.dll:.enemy_fire
 7dc4dd7b9020c9963f743beb993aeff5 Assembly-CSharp.dll:.playerMove
 6dc67961cc5b5482c213e3b1448ed096 Assembly-CSharp.dll:.bullet
@@ -124,6 +125,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 becf26701ce8c01ef17e057a06e3ee04 Assembly-CSharp.dll:.enemyMovement_updown
 b369145ddf42937935a7bc3d1b7ac7a8 Assembly-CSharp.dll:.enemy_health
+b5d048a0ecdec961c70b022c0f29ab00 Assembly-CSharp.dll:.ram_attack
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.leftEdge
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -157,4 +159,3 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 3eb69da2514bd79020b92bb12814bf52 Assembly-CSharp.dll:.enemy_destruct
 5480bb1582054906d109df5bacc562c2 Assembly-CSharp.dll:.enemy_bullet_movement_2
 38545259ed000bddd9df9e9d29c30308 Assembly-CSharp.dll:.player_health
-85be5f242cb086666244972614ab5cb2 Assembly-CSharp.dll:.boss_1_ai

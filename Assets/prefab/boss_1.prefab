@@ -109,9 +109,10 @@ GameObject:
   - component: {fileID: 50156539051540800}
   - component: {fileID: 114513654517375454}
   - component: {fileID: 114347135092310462}
+  - component: {fileID: 114424775196334706}
   m_Layer: 0
   m_Name: boss_1
-  m_TagString: enemies
+  m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1936768002770168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9, y: -0.49, z: 0}
+  m_LocalPosition: {x: 4.12, y: -2.02, z: 0}
   m_LocalScale: {x: 4.1693697, y: 4.1693697, z: 4.1693697}
   m_Children:
   - {fileID: 224991793424418468}
@@ -159,7 +160,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -289,9 +290,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b13c4d55e636814e82d81f2a08eb496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttCD: 1
+  AttCD: 4
   finishAtt: 0
   player: {fileID: 0}
+  attCD: 0
+--- !u!114 &114424775196334706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936768002770168}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615f57b8e4761404689acc259d086ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speedY: 4.5
+  windUpTime: 2.14
+  speedX: 0.45
+  chargeSpeed: -16
+  chargeRecover: 3
+  init: {x: 4.31, y: 0, z: 0}
+  boss: {fileID: 114347135092310462}
 --- !u!114 &114502849530099994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,7 +343,7 @@ MonoBehaviour:
   waiting: 0.2
   bullet: {fileID: 1675752289347536, guid: 2a30623544085174b95314b9e5d1cdb4, type: 2}
   offsetX: 0
-  offsetY: 3
+  offsetY: 1
   Amount: 15
   attackCD: 0.2
   spawnRoatation: {x: 0, y: 0, z: 0, w: 0}

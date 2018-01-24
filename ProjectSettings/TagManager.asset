@@ -9,6 +9,7 @@ TagManager:
   - GameOverMenu
   - bullet
   - missile
+  - boss
   layers:
   - Default
   - TransparentFX

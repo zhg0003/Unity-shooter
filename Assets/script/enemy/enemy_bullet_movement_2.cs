@@ -20,7 +20,7 @@ public class enemy_bullet_movement_2 : MonoBehaviour
     private Collider2D hit;
     private GameObject player;
     private bool moveY = true; //moving in Y direction initially, 
-    private bool target = false; // rotaional movement that target the player, false means it has not been completed yet
+    private bool target = false; // rotational movement that target the player, false means it has not been completed yet
     private Vector3 direction;
     private float speedx;
     private Quaternion rotation; //rotation needed to look at target

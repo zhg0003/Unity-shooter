@@ -46,7 +46,6 @@ public class enemy_fire : MonoBehaviour {
 
         if(fireAmount == 0 && isBoss)
         {
-            print("finish att");
             boss.finishAtt = true;
         }
         

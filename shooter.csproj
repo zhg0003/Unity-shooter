@@ -286,7 +286,8 @@
     <Compile Include="Assets\script\BGmanager.cs" />
     <Compile Include="Assets\script\bullet.cs" />
     <Compile Include="Assets\script\bullet_trigger.cs" />
-    <Compile Include="Assets\script\enemy\boss_1_ai.cs" />
+    <Compile Include="Assets\script\enemy\boss_1\boss_1_ai.cs" />
+    <Compile Include="Assets\script\enemy\boss_1\ram_attack.cs" />
     <Compile Include="Assets\script\enemy\enemy_bullet_movement.cs" />
     <Compile Include="Assets\script\enemy\enemy_bullet_movement_2.cs" />
     <Compile Include="Assets\script\enemy\enemy_bullet_trigger.cs" />
