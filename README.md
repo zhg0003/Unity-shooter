@@ -17,7 +17,7 @@ enemy
   
   -create firing (in progress)
     -target firing (done)
-    -track firing
+    -track firing (in progress)
     
   -create animation (in progress)
     -death animation (done)
@@ -33,7 +33,7 @@ enemy
     -create vertical/rotational movement (in progress)
     -create horizontal movement (done)
     
-  -create boss
+  -create boss (in progress)
 ```
 ```
 items
