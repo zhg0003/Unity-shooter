@@ -223,7 +223,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1857505749331150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.99, y: -0.24, z: 0}
+  m_LocalPosition: {x: -4.57, y: 0.06, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 0.23667602}
   m_Children:
   - {fileID: 4924551757890268}
@@ -525,6 +525,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   sprite: {fileID: 0}
   gameOverMenu: {fileID: 0}
+  isAlive: 0
 --- !u!114 &114776941782806114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -961,7 +962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.040999796, y: -0.21800002}
+  m_AnchoredPosition: {x: -0.039, y: -0.21800002}
   m_SizeDelta: {x: 30.6964, y: 7.1714}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224997934614805212

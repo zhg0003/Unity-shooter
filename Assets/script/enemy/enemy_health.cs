@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class enemy_health : MonoBehaviour
 {
-    public int currentHealth;
+    private int currentHealth;
     public int maxHealth;
     public Slider healthBar;
 

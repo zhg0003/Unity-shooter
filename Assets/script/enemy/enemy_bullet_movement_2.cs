@@ -40,6 +40,7 @@ public class enemy_bullet_movement_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //direction = (transform.position - player.transform.position).normalized;
         //Debug.DrawRay(transform.position, direction, Color.red);
         if (moveY == true)
         {
@@ -47,22 +48,28 @@ public class enemy_bullet_movement_2 : MonoBehaviour
             moveUp();
         }
 
-        else if(target == false)
+        else if (target == false)
         {
-            direction = (player.transform.position - transform.position).normalized;
+            if (player != null)
+                direction = (player.transform.position - transform.position).normalized;
+            else
+                direction = new Vector3(-1, transform.position.y, 0).normalized;
             rotate();
         }
         else
         {
             moveTowards();
         }
-
     }
 
     private void rotate()
     {
-        
-        transform.RotateAround(transform.position, transform.forward, Time.deltaTime * rotationSpeed);
+        if (direction.y > 0)
+        {
+            transform.RotateAround(transform.position, transform.forward, Time.deltaTime * (-rotationSpeed));
+        }
+        else
+            transform.RotateAround(transform.position, transform.forward, Time.deltaTime * rotationSpeed);
         if (-0.99f >= Vector3.Dot(transform.right, direction) && Vector3.Dot(transform.right, direction) >= -1.11f)
         {
             target = true;

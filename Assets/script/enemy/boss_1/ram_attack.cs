@@ -10,8 +10,9 @@ public class ram_attack : MonoBehaviour {
     public float chargeSpeed; //default negative
     public float chargeRecover; //recover time after charge before boss can perform next action
     public Vector3 init; //initial position
-    public boss_1_ai boss;
+    public GameObject boss;
 
+    private boss_1_ai bossAI;
     private float CR;
     private float WUT;
     private Transform playerPos;
@@ -21,6 +22,7 @@ public class ram_attack : MonoBehaviour {
     private bool readyRecover; //ready to go back to initial position after charge
 	// Use this for initialization
 	void Awake () {
+        bossAI = boss.GetComponent<boss_1_ai>();
         canAttack = true;
         readyCharge = false;
         readyRecover = false;
@@ -57,12 +59,11 @@ public class ram_attack : MonoBehaviour {
             }
         }
         else
-            boss.finishAtt = true; //tell the boss ai script this attack process is finished
+            bossAI.finishAtt = true; //tell the boss ai script this attack process is finished
     }
 
     public void resetAtt() //reset speed  and canAttack
     {
-        print("reseting");
         canAttack = true;
         readyCharge = false;
         readyRecover = false;

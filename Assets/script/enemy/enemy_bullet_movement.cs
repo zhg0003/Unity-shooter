@@ -22,7 +22,14 @@ public class enemy_bullet_movement : MonoBehaviour
         hit = GetComponent<Collider2D>();
         hit.enabled = true;
         player = GameObject.FindGameObjectWithTag("Player");
-        direction = (player.transform.position - transform.position).normalized;
+        if (player!=null)
+        {
+            direction = (player.transform.position - transform.position).normalized;
+        }
+        else
+        {
+            direction = new Vector3(-1, transform.position.y, 0).normalized;
+        }
     }
 
     // Update is called once per frame

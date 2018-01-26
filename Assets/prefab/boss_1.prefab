@@ -124,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1936768002770168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.12, y: -2.02, z: 0}
+  m_LocalPosition: {x: 4.12, y: 0.16, z: 0}
   m_LocalScale: {x: 4.1693697, y: 4.1693697, z: 4.1693697}
   m_Children:
   - {fileID: 224991793424418468}
@@ -225,7 +225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07a78a818d022641a616ec6683fc574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
   maxHealth: 1000
   healthBar: {fileID: 114298518499550338}
   maxIframe: 0
@@ -293,7 +292,7 @@ MonoBehaviour:
   AttCD: 4
   finishAtt: 0
   player: {fileID: 0}
-  attCD: 0
+  attCD: 1.74
 --- !u!114 &114424775196334706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,7 +311,7 @@ MonoBehaviour:
   chargeSpeed: -16
   chargeRecover: 3
   init: {x: 4.31, y: 0, z: 0}
-  boss: {fileID: 114347135092310462}
+  boss: {fileID: 1936768002770168}
 --- !u!114 &114502849530099994
 MonoBehaviour:
   m_ObjectHideFlags: 1

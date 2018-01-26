@@ -6,6 +6,7 @@ public class boss_1_ai : MonoBehaviour {
     public float AttCD;
     public bool finishAtt; // did the att script finish the attack process?
     public GameObject player; //check if player is alive
+    public int impactDMG;
 
     private player_health playerHealth;
     private enemy_fire attack1;
@@ -62,6 +63,13 @@ public class boss_1_ai : MonoBehaviour {
                 }
             }
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            other.SendMessageUpwards("damage", impactDMG);
+        }
     }
 }
