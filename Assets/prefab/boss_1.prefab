@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 114513654517375454}
   - component: {fileID: 114347135092310462}
   - component: {fileID: 114424775196334706}
+  - component: {fileID: 114336488883421808}
   m_Layer: 0
   m_Name: boss_1
   m_TagString: boss
@@ -124,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1936768002770168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.12, y: 0.16, z: 0}
+  m_LocalPosition: {x: 4.5, y: 0, z: 0}
   m_LocalScale: {x: 4.1693697, y: 4.1693697, z: 4.1693697}
   m_Children:
   - {fileID: 224991793424418468}
@@ -278,6 +279,27 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114336488883421808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936768002770168}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605cbb9c855c81c41b7e68b9719f7fbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 1936768002770168}
+  timeBomb: {fileID: 1736085109547122, guid: f1854321cc19b2f429a6af9638a0de33, type: 2}
+  offsetX1: -0.25
+  offsetY1: 0
+  offsetX2: 0
+  offsetY2: 0
+  spawnCD: 0.25
+  initPos: {x: 4, y: 2, z: 0}
+  numTurns: 2
+  speed: 1
 --- !u!114 &114347135092310462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -289,10 +311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b13c4d55e636814e82d81f2a08eb496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttCD: 4
+  AttCD: 1
   finishAtt: 0
   player: {fileID: 0}
-  attCD: 1.74
+  impactDMG: 40
 --- !u!114 &114424775196334706
 MonoBehaviour:
   m_ObjectHideFlags: 1

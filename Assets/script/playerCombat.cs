@@ -25,7 +25,6 @@ public class playerCombat : MonoBehaviour {
             anim.SetBool("att", true);
             //instantiate bullet object
             Vector3 pos = new Vector3(transform.position.x + offset, transform.position.y, 0);
-            print("pos is " + pos);
             Instantiate(bullet, pos, transform.rotation);
             attack = true;
             attCD = maxAttCD;

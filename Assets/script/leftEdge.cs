@@ -8,6 +8,7 @@ public class leftEdge : MonoBehaviour {
     {
         if (other.tag == "Player" || other.tag == "enemies" || other.tag == "bullet" || other.tag == "missile")
         {
+            //print("touched "+gameObject.name);
             other.SendMessageUpwards("death");
         }
     }

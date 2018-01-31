@@ -288,6 +288,7 @@
     <Compile Include="Assets\script\bullet_trigger.cs" />
     <Compile Include="Assets\script\enemy\boss_1\boss_1_ai.cs" />
     <Compile Include="Assets\script\enemy\boss_1\ram_attack.cs" />
+    <Compile Include="Assets\script\enemy\boss_1\spawnTimeBomb.cs" />
     <Compile Include="Assets\script\enemy\enemy_bullet_movement.cs" />
     <Compile Include="Assets\script\enemy\enemy_bullet_movement_2.cs" />
     <Compile Include="Assets\script\enemy\enemy_bullet_trigger.cs" />
@@ -297,6 +298,7 @@
     <Compile Include="Assets\script\enemy\enemy_health.cs" />
     <Compile Include="Assets\script\enemy\enemyMovement_straight.cs" />
     <Compile Include="Assets\script\enemy\enemyMovement_updown.cs" />
+    <Compile Include="Assets\script\enemy\timeBomb.cs" />
     <Compile Include="Assets\script\leftEdge.cs" />
     <Compile Include="Assets\script\menu\GameOverMenu.cs" />
     <Compile Include="Assets\script\moveBG.cs" />

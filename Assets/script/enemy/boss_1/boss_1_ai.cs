@@ -9,18 +9,23 @@ public class boss_1_ai : MonoBehaviour {
     public int impactDMG;
 
     private player_health playerHealth;
+
     private enemy_fire attack1;
     private ram_attack attack2;
-    public float attCD;
+    private spawnTimeBomb attack3;
+
+    private float attCD;
     private bool canAtt = true;
 	// Use this for initialization
 	void Start () {
         attack1 = GetComponent<enemy_fire>();
         attack2 = GetComponent<ram_attack>();
+        attack3 = GetComponent<spawnTimeBomb>();
         attack1.isBoss = true;
         attCD = AttCD;
         attack1.enabled = false;
         attack2.enabled = false;
+        attack3.enabled = false;
         finishAtt = false;
         playerHealth = player.GetComponent<player_health>();
 	}
@@ -33,15 +38,21 @@ public class boss_1_ai : MonoBehaviour {
             {
                 float random = Random.value;
                 print("random value is " + random);
-                if (random >= 0.5)
+                print((float)2 / 3);
+                if (random > (float)2/3)
                 {
                     print("choosing att2");
                     attack2.enabled = true;
                 }
-                else
+                else if (random > (float)1/3)
                 {
                     print("choosing att1");
                     attack1.enabled = true;
+                }
+                else
+                {
+                    print("choosing att3");
+                    attack3.enabled = true;
                 }
                 canAtt = false;
             }
@@ -53,11 +64,8 @@ public class boss_1_ai : MonoBehaviour {
                 attCD -= Time.deltaTime;
                 if (attCD < 0)
                 {
+                    resetAtt();
                     finishAtt = false;
-                    attack2.resetAtt();
-                    attack1.resetAtt();
-                    attack1.enabled = false;
-                    attack2.enabled = false;
                     attCD = AttCD;
                     canAtt = true;
                 }
@@ -65,6 +73,15 @@ public class boss_1_ai : MonoBehaviour {
         }
     }
 
+    private void resetAtt()
+    {
+        attack1.resetAtt();
+        attack2.resetAtt();
+        attack3.resetAtt();
+        attack1.enabled = false;
+        attack2.enabled = false;
+        attack3.enabled = false;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
