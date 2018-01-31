@@ -12,8 +12,6 @@ Player
 enemy
   -create enemy object (in progress)
     -create enemy spawn group prefab (in progress)
-    
-  -create AI (in progress)
   
   -create firing (in progress)
     -target firing (done)
@@ -34,6 +32,8 @@ enemy
     -create horizontal movement (done)
     
   -create boss (in progress)
+    -create 3 attacks for boss (done)
+    -more advanced AI
 ```
 ```
 items
