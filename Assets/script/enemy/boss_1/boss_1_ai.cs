@@ -37,21 +37,17 @@ public class boss_1_ai : MonoBehaviour {
             if (canAtt)
             {
                 float random = Random.value;
-                print("random value is " + random);
                 print((float)2 / 3);
                 if (random > (float)2/3)
                 {
-                    print("choosing att2");
                     attack2.enabled = true;
                 }
                 else if (random > (float)1/3)
                 {
-                    print("choosing att1");
                     attack1.enabled = true;
                 }
                 else
                 {
-                    print("choosing att3");
                     attack3.enabled = true;
                 }
                 canAtt = false;
@@ -82,11 +78,15 @@ public class boss_1_ai : MonoBehaviour {
         attack2.enabled = false;
         attack3.enabled = false;
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
             other.SendMessageUpwards("damage", impactDMG);
+        }
+        if(other.tag == "bullet")
+        {
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class bullet : MonoBehaviour {
+    public ParticleSystem explosion;
     private Collider2D hit;
     public float speed = 1f;
     public int dmg = 5;
@@ -26,8 +27,9 @@ public class bullet : MonoBehaviour {
         }
     }
 
-    public void death() //destroy this bullet when it flies out of range
+    public void death()
     {
+        Instantiate(explosion, transform.position, explosion.transform.rotation);
         Destroy(gameObject);
     }
 }

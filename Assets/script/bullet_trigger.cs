@@ -8,7 +8,7 @@ public class bullet_trigger : bullet {
         if (other.tag == "enemies" || other.tag == "missile" || other.tag == "boss")
         {
             other.SendMessageUpwards("damage", dmg);
-            Destroy(gameObject);
+            death();
         }
     }
 }

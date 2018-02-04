@@ -6,15 +6,16 @@ using UnityEngine;
 
 public class enemy_bullet_movement : MonoBehaviour
 {
-    private Collider2D hit;
+    public ParticleSystem explosion;
     public float speed = 1f;
     public int dmg = 10;
-    private float step;
+    
     public float timer = 1f;
     private GameObject player;
-
+    private Collider2D hit;
     private Transform target;
     private Vector3 direction;
+    private float step;
     // Use this for initialization
 
     void Awake()
@@ -54,6 +55,7 @@ public class enemy_bullet_movement : MonoBehaviour
         if(collision.name == "player")
         {
             collision.SendMessageUpwards("damage", dmg);
+            Instantiate(explosion, transform.position, explosion.transform.rotation);
             Destroy(gameObject);
         }
     }

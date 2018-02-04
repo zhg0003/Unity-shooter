@@ -225,8 +225,8 @@ MonoBehaviour:
   groupCD: 0
   amount: 0
   pos: {x: 0, y: 0, z: 0}
-  currentPos: {fileID: 0}
   speedx: 2
+  speedy: 0
 --- !u!114 &114325599995272478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,7 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07a78a818d022641a616ec6683fc574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
   maxHealth: 10
   healthBar: {fileID: 114953182007505096}
   maxIframe: 0
@@ -280,9 +279,11 @@ MonoBehaviour:
   bullet: {fileID: 1287075845095328, guid: 69ec2bafab2679449ae41e5227a2bea2, type: 2}
   offsetX: -0.1
   offsetY: 0
-  Amount: 3
+  Amount: 4
   attackCD: 0.25
   spawnRoatation: {x: 0, y: 0, z: 0, w: 0}
+  isBoss: 0
+  boss: {fileID: 0}
 --- !u!114 &114703961957324932
 MonoBehaviour:
   m_ObjectHideFlags: 1

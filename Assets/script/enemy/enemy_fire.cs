@@ -9,7 +9,6 @@ public class enemy_fire : MonoBehaviour {
     public float offsetY;
     public int Amount; //amount of bullets will be fired
     public float attackCD; //cd between each bullet
-    public Quaternion spawnRoatation;
     public bool isBoss; //is the gameObject attached to a boss
     public boss_1_ai boss;
 
@@ -34,7 +33,7 @@ public class enemy_fire : MonoBehaviour {
         //fire once and stop, or can fire multiple times
         if (waitTimer < 0  && fireAmount > 0 && attCD < 0 ) {
             Vector3 pos = new Vector3(transform.position.x + offsetX, transform.position.y+offsetY, 0);
-            Instantiate(bullet, pos, spawnRoatation);
+            Instantiate(bullet, pos, bullet.transform.rotation);
             fireAmount -= 1;
             attCD = attackCD;
         }
