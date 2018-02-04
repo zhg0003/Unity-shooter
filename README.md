@@ -1,5 +1,8 @@
 # Unity-shooter
-
+## How to use
+```
+download the zip, extract and run test.exe
+```
 ## To Do 
 ```
 Player
@@ -17,21 +20,21 @@ enemy
     -target firing (done)
     -track firing (in progress)
     
-  -create animation (in progress)
+  -create animation (paused)
     -death animation (done)
     -idle animation (done)
     -attack animation (if any)
     
   -create damage/health (done)
     -health (done)
-    -damage (in progress)
-      -create enemy projectile(in progress)
+    -damage (done)
+      -create enemy projectile(done)
       
-  -create movement (in progress)
+  -create movement (paused)
     -create vertical/rotational movement (in progress)
     -create horizontal movement (done)
     
-  -create boss (in progress)
+  -create boss (paused)
     -create 3 attacks for boss (done)
     -more advanced AI
 ```
