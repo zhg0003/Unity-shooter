@@ -71,7 +71,7 @@ public class player_health : MonoBehaviour {
     }
     public void heal(int value)
     {
-        if (currentHealth <= 0)
+        if (currentHealth <= -30)
         {
             death();
         }
